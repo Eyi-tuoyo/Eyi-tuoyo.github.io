@@ -104,8 +104,8 @@ function Home() {
 
                 {[
                   { src: "/CSS.png", label: "CSS (cascading style sheet)" },
-                  { src: "/Flask.png", label: "Flask" },
                   { src: "/HTML.png", label: "HTML is easy" },
+                  { src: "/Flask.png", label: "Flask is good" },
                   { src: "/jinja.png", label: "Jinja" },
                   { src: "/JS.png", label: "JavaScript" },
                   { src: "/Python.png", label: "Python" },
