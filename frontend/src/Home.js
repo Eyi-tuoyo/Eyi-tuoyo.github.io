@@ -99,7 +99,7 @@ function Home() {
        
 
 
-            <div className="flex justify-end ml-auto">
+            <div className="flex justify-center ml-auto">
               <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
 
                 {[
