@@ -103,9 +103,9 @@ function Home() {
               <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
 
                 {[
-                  { src: "/CSS.png", label: "CSS (cascading style sheet)" },
-                  { src: "/HTML.png", label: "HTML is easy" },
-                  { src: "/Flask.png", label: "Flask is good" },
+                  { src: "/CSS.png", label: "CSS" },
+                  { src: "/HTML.png", label: "HTML" },
+                  { src: "/Flask.png", label: "Flask" },
                   { src: "/jinja.png", label: "Jinja" },
                   { src: "/JS.png", label: "JavaScript" },
                   { src: "/Python.png", label: "Python" },
