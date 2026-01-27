@@ -103,7 +103,7 @@ function Home() {
               <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
 
                 {[
-                  { src: "/CSS.png", label: "CSS" },
+                  { src: "/CSS.png", label: "CSS (cascading style sheet)" },
                   { src: "/Flask.png", label: "Flask" },
                   { src: "/HTML.png", label: "HTML" },
                   { src: "/jinja.png", label: "Jinja" },
