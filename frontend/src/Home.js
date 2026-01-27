@@ -75,7 +75,7 @@ function Home() {
           <section id="about">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">About</h2>
             <p>
-              I am a Level 2 Software Development student who enjoys building simple but functional web applications and learning how different technologies work together. I’m currently building my skills in both front-end and back-end development using tools like React, JavaScript, Python, and SQL.
+              I am a Level 3 Software Development student who enjoys building simple but functional web applications and learning how different technologies work together. I’m currently building my skills in both front-end and back-end development using tools like React, JavaScript, Python, and SQL.
             </p>
             <p>
               I enjoy problem-solving, experimenting with new coding concepts, and working on small personal projects. My goal is to become a full-stack developer and continue improving through hands-on learning and collaboration with others.
