@@ -82,6 +82,15 @@ function Home() {
               I am a Level 3 Software Development student who enjoys building
               simple but functional web applications. I focus on understanding
               how front-end and back-end technologies work together.
+        </div>
+
+        <div className="w-full lg:w-2/3 text-gray-700 space-y-10 mt-8 lg:mt-0 scroll-smooth">
+
+          {/* ABOUT SECTION  */}
+          <section id="about">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">About</h2>
+            <p>
+              I am a Level 3 Software Development student who enjoys building simple but functional web applications and learning how different technologies work together. I’m currently building my skills in both front-end and back-end development using tools like React, JavaScript, Python, and SQL.
             </p>
             <p className="leading-relaxed">
               I enjoy problem-solving, experimenting with new concepts, and
@@ -97,6 +106,11 @@ function Home() {
 
             <p className="mb-4">
               <strong>Front-End Development — Student Projects</strong>
+          {/* EXPERIENCE SECTION */}
+          <section id="experience">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800 ">Experience</h2>
+            <p>
+              <strong>Front-End Development — Student Projects</strong>  
               <br />
               Built responsive web pages using HTML, CSS, JavaScript, React, and
               Tailwind CSS with a focus on layout and usability.
@@ -136,6 +150,39 @@ function Home() {
                   </span>
                 </div>
               ))}
+
+       
+
+
+            <div className="flex justify-center ml-auto">
+              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
+
+                {[
+                  { src: "/CSS.png", label: "CSS (cascading style sheet)" },
+                  { src: "/HTML.png", label: "HTML is easy" },
+                  { src: "/Flask.png", label: "Flask is good" },
+                  { src: "/jinja.png", label: "Jinja is here" },
+                  { src: "/JS.png", label: "JavaScript" },
+                  { src: "/Python.png", label: "Python" },
+                  { src: "/React.png", label: "React" },
+                  { src: "/sqlite.png", label: "SQLite" },
+                  { src: "/Tailwind.png", label: "Tailwind" }
+                ].map((item) => (
+                  <div key={item.src} className="relative group w-full h-20 flex items-center justify-center">
+
+                    <p className="absolute -top-6 text-xs sm:text-sm font-medium text-gray-800 opacity-0 group-hover:opacity-100 transition duration-300">
+                      {item.label}
+                    </p>
+
+                    <img 
+                      src={item.src}
+                      alt={item.label}
+                      className="w-full h-20 object-contain transform transition duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                ))}
+
+              </div>
             </div>
           </section>
 
