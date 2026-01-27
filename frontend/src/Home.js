@@ -71,7 +71,7 @@ function Home() {
 
         <div className="w-full lg:w-2/3 text-gray-700 space-y-10 mt-8 lg:mt-0 scroll-smooth">
 
-          {/* ABOUT SECTION UPDATED */}
+          {/* ABOUT SECTION  */}
           <section id="about">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">About</h2>
             <p>
@@ -82,7 +82,7 @@ function Home() {
             </p>
           </section>
 
-          {/* EXPERIENCE SECTION UPDATED */}
+          {/* EXPERIENCE SECTION */}
           <section id="experience">
             <h2 className="text-2xl font-bold mb-4 text-gray-800 ">Experience</h2>
             <p>
@@ -106,7 +106,7 @@ function Home() {
                   { src: "/CSS.png", label: "CSS (cascading style sheet)" },
                   { src: "/HTML.png", label: "HTML is easy" },
                   { src: "/Flask.png", label: "Flask is good" },
-                  { src: "/jinja.png", label: "Jinja" },
+                  { src: "/jinja.png", label: "Jinja is here" },
                   { src: "/JS.png", label: "JavaScript" },
                   { src: "/Python.png", label: "Python" },
                   { src: "/React.png", label: "React" },
