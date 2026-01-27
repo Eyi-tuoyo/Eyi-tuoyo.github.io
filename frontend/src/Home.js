@@ -1,16 +1,3 @@
-/*
-Version x
-
-version 1.1: added menu
-version 1.1.1: Added individual button styling
-version 1.1.2: Added link to homepage
-version 1.2: Added about me
-version 1.2.1: Added work experience
-version 1.2.2: Added carded styling
-
-*/
-
-
 import { useState, useEffect } from 'react';
 
 function Home() {
@@ -18,8 +5,10 @@ function Home() {
     const [currentText, setCurrentText] = useState('');
     const [textIndex, setTextIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
-    useEffect(()=>{document.title="Eyituoyo Besidonne"})
 
+    useEffect(() => {
+      document.title = "Eyituoyo Besidonne";
+    }, []);
 
     useEffect(() => {
       let timeout;
@@ -33,7 +22,7 @@ function Home() {
         timeout = setTimeout(() => {
           setCharIndex(0);
           setCurrentText('');
-          setTextIndex((prev) => (prev + 1) % texts.length);
+          setTextIndex(prev => (prev + 1) % texts.length);
         }, pause);
       }
 
@@ -44,104 +33,119 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-6 sm:p-10 scroll-smooth">
-      <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-40 w-full max-w-6xl">
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-4 sm:px-8 py-10 scroll-smooth">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-40 max-w-6xl mx-auto">
 
-        <div className="text-left lg:sticky top-40 w-full">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-800">
+        {/* LEFT / SIDEBAR */}
+        <div className="w-full lg:w-1/3 text-left lg:sticky lg:top-32">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">
             Eyituoyo Besidonne
           </h2>
-          <h3 className="text-base sm:text-lg font-semibold mb-4 text-gray-700 h-[1em]">
-            <Typewriter 
-              texts={["Software Student", "Full-Stack Developer"]} 
-              delay={100} 
-              pause={1500} 
+
+          <h3 className="text-base sm:text-lg font-semibold text-gray-700 h-[1.2em] mb-4">
+            <Typewriter
+              texts={["Software Student", "Full-Stack Developer"]}
+              delay={100}
+              pause={1500}
             />
           </h3>
+
           <p className="text-gray-600 mb-6">
-            Passionate about building web applications and exploring new technologies. Currently learning full-stack development and collaborating on personal projects.
+            Passionate about building web applications and exploring new technologies.
+            Currently learning full-stack development and collaborating on personal projects.
           </p>
 
-          <nav className="flex flex-row lg:flex-col border-l-0 lg:border-l-2 border-gray-400 pl-0 lg:pl-4 space-x-6 lg:space-x-0 lg:space-y-3">
-            <a href="#about" className="text-gray-700 hover:text-blue-600 transition">About</a>
-            <a href="#experience" className="text-gray-700 hover:text-blue-600 transition">Experience</a>
-            <a href="#projects" className="text-gray-700 hover:text-blue-600 transition">Projects</a>
+          <nav
+            className="
+              flex flex-col sm:flex-row lg:flex-col
+              gap-4
+              border-l-0 lg:border-l-2 border-gray-400
+              pl-0 lg:pl-4
+            "
+          >
+            <a href="#about" className="text-gray-700 hover:text-blue-600 transition">
+              About
+            </a>
+            <a href="#experience" className="text-gray-700 hover:text-blue-600 transition">
+              Experience
+            </a>
+            <a href="#projects" className="text-gray-700 hover:text-blue-600 transition">
+              Projects
+            </a>
           </nav>
         </div>
 
-        <div className="w-full lg:w-2/3 text-gray-700 space-y-10 mt-8 lg:mt-0 scroll-smooth">
+        {/* RIGHT / CONTENT */}
+        <div className="w-full lg:w-2/3 space-y-16 text-gray-700">
 
-          {/* ABOUT SECTION UPDATED */}
+          {/* ABOUT */}
           <section id="about">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">About</h2>
-            <p>
-              I am a Level 3 Software Development student who enjoys building simple but functional web applications and learning how different technologies work together. I’m currently building my skills in both front-end and back-end development using tools like React, JavaScript, Python, and SQL.
+            <p className="mb-4">
+              I am a Level 3 Software Development student who enjoys building simple but
+              functional web applications and learning how different technologies work together.
             </p>
             <p>
-              I enjoy problem-solving, experimenting with new coding concepts, and working on small personal projects. My goal is to become a full-stack developer and continue improving through hands-on learning and collaboration with others.
+              My goal is to become a full-stack developer and continue improving through
+              hands-on learning and collaboration.
             </p>
           </section>
 
-          {/* EXPERIENCE SECTION UPDATED */}
+          {/* EXPERIENCE */}
           <section id="experience">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800 ">Experience</h2>
-            <p>
-              <strong>Front-End Development — Student Projects</strong>  
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Experience</h2>
+
+            <p className="mb-4">
+              <strong>Front-End Development — Student Projects</strong>
               <br />
-              Built responsive web pages using HTML, CSS, JavaScript, and React. Practiced structuring components, implementing layouts, and improving user experience using Tailwind CSS.
-            </p>
-            <p>
-              <strong>Python Development — Coursework & Personal Projects</strong>  
-              <br />
-              Created small Python applications such as automation scripts and beginner-level tools. Gained hands-on experience with Flask, APIs, SQLite databases, and Jinja templates.
+              Built responsive web pages using HTML, CSS, JavaScript, React, and Tailwind CSS.
             </p>
 
-       
+            <p>
+              <strong>Python Development — Coursework & Personal Projects</strong>
+              <br />
+              Created small Python applications using Flask, APIs, SQLite, and Jinja templates.
+            </p>
 
-
-            <div className="flex justify-center ml-auto">
-              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
-
+            {/* SKILLS GRID */}
+            <div className="mt-10 flex justify-center">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
                 {[
-                  { src: "/CSS.png", label: "CSS (cascading style sheet)" },
-                  { src: "/HTML.png", label: "HTML is easy" },
-                  { src: "/Flask.png", label: "Flask is good" },
-                  { src: "/jinja.png", label: "Jinja" },
+                  { src: "/HTML.png", label: "HTML" },
+                  { src: "/CSS.png", label: "CSS" },
                   { src: "/JS.png", label: "JavaScript" },
-                  { src: "/Python.png", label: "Python" },
                   { src: "/React.png", label: "React" },
-                  { src: "/sqlite.png", label: "SQLite" },
-                  { src: "/Tailwind.png", label: "Tailwind" }
-                ].map((item) => (
-                  <div key={item.src} className="relative group w-full h-20 flex items-center justify-center">
-
-                    <p className="absolute -top-6 text-xs sm:text-sm font-medium text-gray-800 opacity-0 group-hover:opacity-100 transition duration-300">
+                  { src: "/Tailwind.png", label: "Tailwind" },
+                  { src: "/Python.png", label: "Python" },
+                  { src: "/Flask.png", label: "Flask" },
+                  { src: "/jinja.png", label: "Jinja" },
+                  { src: "/sqlite.png", label: "SQLite" }
+                ].map(item => (
+                  <div
+                    key={item.label}
+                    className="relative group h-20 flex items-center justify-center"
+                  >
+                    <span className="absolute -top-6 text-xs font-medium text-gray-800 opacity-0 group-hover:opacity-100 transition">
                       {item.label}
-                    </p>
+                    </span>
 
-                    <img 
+                    <img
                       src={item.src}
                       alt={item.label}
-                      className="w-full h-20 object-contain transform transition duration-300 group-hover:scale-110"
+                      className="h-16 object-contain transition transform group-hover:scale-110"
                     />
                   </div>
                 ))}
-
               </div>
             </div>
           </section>
 
+          {/* PROJECTS */}
           <section id="projects">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800 ">Experience</h2>
-             <p>
-              <strong>Front-End Development — Student Projects</strong>  
-              <br />
-              Built responsive web pages using HTML, CSS, JavaScript, and React. Practiced structuring components, implementing layouts, and improving user experience using Tailwind CSS.
-            </p>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">Projects</h2>
             <p>
-              <strong>Python Development — Coursework & Personal Projects</strong>  
-              <br />
-              Created small Python applications such as automation scripts and beginner-level tools. Gained hands-on experience with Flask, APIs, SQLite databases, and Jinja templates.
+              Personal and coursework projects focused on responsive design, APIs,
+              and full-stack fundamentals. (Portfolio projects coming soon 🚀)
             </p>
           </section>
 
