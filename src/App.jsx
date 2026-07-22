@@ -176,21 +176,21 @@ const projects = [
     description:
       "A full-stack web application that helps people with diabetes make informed meal choices by recommending recipes tailored to their blood sugar levels and dietary needs.",
     tech: ["React", "Flask", "SQLite", "Tailwind"],
-    github: "https://github.com/eyi-tuoyo/gluca",
+    github: "https://github.com/eyi-tuoyo/Group19-HackEd-",
   },
   {
     title: "Phishing Game",
     description:
       "An educational fishing game where players catch safe fish while avoiding malicious ones, learning to recognize common cybersecurity threats such as phishing, malware, and social engineering attacks.",
     tech: ["React", "Tailwind", "JavaScript"],
-    github: "https://github.com/eyi-tuoyo/Norfolk-Show",
+    github: "https://github.com/eyi-tuoyo/RealGUppercut/Norfolk-Show",
   },
   {
     title: "Database VLE",
     description:
       "A virtual learning environment (VLE) dashboard that provides students, parents, and teachers with role-based access to academic information, progress tracking, and educational resources.",
     tech: ["Python", "Flask", "Jinja", "SQLite"],
-    github: "https://github.com/eyituoyo/Database-vle",
+    github: "https://github.com/eyi-tuoyo/Database-vle",
   },
 ];
 
