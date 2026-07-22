@@ -172,27 +172,26 @@ const experiences = [
 
 const projects = [
   {
-    title: "Gluca 2.0",
+    title: "Gluca",
     description:
-      "Full-stack productivity app with user authentication, task categorization, and drag-and-drop organization. Built with a React front-end and Flask REST API.",
+      "A full-stack web application that helps people with diabetes make informed meal choices by recommending recipes tailored to their blood sugar levels and dietary needs.",
     tech: ["React", "Flask", "SQLite", "Tailwind"],
-    github: "https://github.com/",
+    github: "https://github.com/eyi-tuoyo/gluca",
   },
   {
-    title: "Phising Game",
+    title: "Phishing Game",
     description:
-      "Social networking platform for developers to share projects, follow peers, and discover open-source repositories. Responsive design with theme toggle.",
+      "An educational fishing game where players catch safe fish while avoiding malicious ones, learning to recognize common cybersecurity threats such as phishing, malware, and social engineering attacks.",
     tech: ["React", "Tailwind", "JavaScript"],
-    github: "https://github.com/",
+    github: "https://github.com/eyi-tuoyo/Norfolk-Show",
   },
   {
-    title: "Database-VLE",
+    title: "Database VLE",
     description:
-      "Code snippet manager with syntax highlighting, tagging, and search. Jinja-rendered pages served by a Flask back-end with SQLite persistence.",
+      "A virtual learning environment (VLE) dashboard that provides students, parents, and teachers with role-based access to academic information, progress tracking, and educational resources.",
     tech: ["Python", "Flask", "Jinja", "SQLite"],
-    github: "https://github.com/",
+    github: "https://github.com/eyituoyo/Database-vle",
   },
-
 ];
 
 const navLinks = [
